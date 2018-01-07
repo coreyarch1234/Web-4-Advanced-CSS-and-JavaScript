@@ -53,3 +53,19 @@ accommodate different screen sizes and different
 display devices.
 
 ### Resources
+
+
+## Competencies 
+
+1. Recognize CSS selectors for any occasion using advanced selectors like: :before, :after, :nth-child, :first-child
+1. Compare and evaluate selectors for a wide variety of potential uses.
+1. Construct layout using Flex Box.
+1. Layout elements using CSS grid.
+1. Develop good CSS habits, including naming convention, organization, and other industry best practices.
+1. Design interesting and effective micro interactions.
+1. Write clientside JavaScript.
+  1. Use vanilla JavaScript to manipulate the DOM.
+  1. Use JS to implement AJAX requests. 
+1. Create Single Page applications
+1. Build Systems Webpack, Gulp.
+  1. preprocess, minify, uglify, and package. 

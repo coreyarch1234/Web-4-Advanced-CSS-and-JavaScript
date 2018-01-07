@@ -32,18 +32,14 @@ This class will cover four major topics areas:
 
 ## Competencies 
 
-1. Recognize CSS selectors for any occasion using advanced selectors like: :before, :after, :nth-child, :first-child
-1. Compare and evaluate selectors for a wide variety of potential uses.
-1. Construct layout using Flex Box.
-1. Layout elements using CSS grid.
-1. Develop good CSS habits, including naming convention, organization, and other industry best practices.
+1. Construct work with advanced CSS Selectors.
+1. Create layouts using CSS grid and Flex Box.
+1. Develop good CSS habits, including naming convention, organization. 
+1. Apply industry best practices like DRY and separation of concerns.
 1. Design interesting and effective micro interactions.
 1. Write clientside JavaScript.
   1. Use vanilla JavaScript to manipulate the DOM.
-  1. Use JS to implement AJAX requests. 
-1. Create Single Page applications
-1. Build Systems Webpack, Gulp.
-  1. preprocess, minify, uglify, and package. 
+  1. Use JavaScript to trigger visual state changes with animation. 
 
 ## Lessons
 
@@ -82,13 +78,15 @@ To complete the material for the class you should be familiar with
 - Project Redesign 
   - Choose a project you have currently completed and redesign and improve it. 
 - Custom Project 
-  - 
 
 ## Evaluations
 
 To pass this class you must:
 
-- Complete 75% of the challenges
-- Complete 3 class projects 
+- Complete 100% of the challenges
+  - And 75% of the stretch challenges
+- Complete 2 class projects 
+  - Project Redesign
+  - Custom Project
 
 
