@@ -125,28 +125,41 @@ You should be using these CSS properties:
 
 If you can't think of things to draw try these: 
 
-- Hamburger
-- Marker
-- Leaf
-- Heart
-- Dropplet
+- Food 
+  - Hamburger
+  - Coffee mug
+  - Coffee bean
+  - Orange (the fruit)
+- Icons
+  - Marker
+  - Heart
+- Nature 
+  - Leaf
+  - Dropplet
+  - Tree
+  - Flower
+- Vehicles
+  - Car
+  - Truck 
+  - Plane 
+  - Flying Saucer
+- Animals
+  - Elephant
+  - Cat
+  - Dog
+  - Insect
+    - Spider
+    - Beetle
+- Architecture
+  - House 
+  - Office Building
 - Labtop
-- Car
-- Truck 
-- House 
-- Coffee mug
-- Tree
 - Lamp
-- Office Building
-- Video Game Controller 
 - Hat
-- Flower
-- Elephant
+- Video Game Controller 
 - Fire extinguisher
-- Coffee bean
 - Person
 - Slack Logo
-- Orange (the fruit)
 - Robot
 - Make a logo for one of your projects
 - Try to recreate a logo: 
@@ -159,22 +172,13 @@ If you can't think of things to draw try these:
   - Disney (Mickey mouse)
   - Windows
   - Ethereum
-  - 
-
-### Advanced Stretch Challenge SVG
-
-Use SVG images in your work. 
-
-You can find SVG images in the web, or generate them with Sketch. 
-
-You can import SVG with the img tag
-
-Or pasted SVG code directly in your document. In this case you 
-can apply class and id names to SVG elements and apply styles. 
-
+  
 ### Advanced use Gradient
 
-Use CSS gradient fills. 
+- Use CSS gradient fills.
+- Make a pattern with CSS Gradients. 
+  - Fork this Repo and submit a pull request to include your pattern!
+  - http://lea.verou.me/css3patterns/#new-submissions
 
 ### Abstract your classes
 
@@ -190,6 +194,21 @@ that apply in many cases. For example:
   border-radius: 50%;
 }
 ```
+
+### Clip Path 
+
+Use `clip-path`
+
+### Advanced Stretch Challenge SVG
+
+Use SVG images in your work. 
+
+You can find SVG images in the web, or generate them with Sketch. 
+
+You can import SVG with the img tag
+
+Or pasted SVG code directly in your document. In this case you 
+can apply class and id names to SVG elements and apply styles. 
 
 
 ## Lesson 

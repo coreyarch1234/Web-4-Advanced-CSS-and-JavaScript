@@ -9,8 +9,8 @@ and user experience of the chosen project.
 
 ## Competencies 
 
-Completing the course material and challenges presented here students
-should develop the following competencies: 
+Completing the course material and challenges presented 
+here students should develop the following competencies: 
 
 - Analyze existing projects for 
   - areas to improve
@@ -23,22 +23,23 @@ should develop the following competencies:
 
 ## Challenges
 
-Choose a project that you have previously created. Your goal is to 
-look for areas where this project can be improved using the material 
-from this class. 
+Choose a project that you have previously created. Your 
+goal is to look for areas where this project can be 
+improved using the material from this class. 
 
 Follow these steps 
 
-1. Choose a project. 
+1. Choose a project.
+  - Choose something that can use some visual improvements. 
 3. Take screen shots of your project. 
-4. Annote your screen shots and add comments to your code base 
-  describing the improvements you want to make. Describe at least
-  3 areas to improve. 
+  - The idea is to document what you are doing. 
+4. Annote your screen shots and add comments to your code base.
+  - If this project isn't on GitHub make a repo for it. 
+  - Document your planned improvements on GitHub. 
+  - Describe at least three areas to improve. 
     - Layout 
     - Typography 
     - Interaction design
     - Color 
-    - 
 
-Include a deailed description of the proposed improvements in the README
-of the GitHub Repo for the project. 
+
