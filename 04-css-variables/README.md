@@ -8,3 +8,20 @@ coding practice allowing you to make your code DRY and improve separation
 of concerns. 
 
 No, really, CSS varaibles are amazeballs!
+
+## CSS Variables 
+
+Define a variable with: 
+
+`--var-name: value;`
+
+Names begin with `--`, I know this looks weird. 
+
+Access a variable's value with: 
+
+`var()`
+
+For example: 
+
+`var(--var-name)`
+

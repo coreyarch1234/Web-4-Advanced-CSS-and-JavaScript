@@ -12,6 +12,7 @@
       left: 100px;
       top: 50px;
       background-color: brown;
+      /* Move */
       transform: translate(50px, 10px) rotate(30deg);
     }
 
@@ -397,7 +398,182 @@
 
   </style>
 
+  <div>
+    <div class="landscape">
+      <div class="sun"></div>
+
+      <div class="clouds cloud-1"></div>
+      <div class="clouds cloud-2"></div>
+      <div class="clouds cloud-3"></div>
+      <div class="clouds cloud-4"></div>
+
+      <div class="hills hill-0"></div>
+      <div class="hills hill-1"></div>
+      <div class="hills hill-2"></div>
+    </div>
+  </div>
+
+  <style>
+    .landscape {
+      position: relative;
+      width: 100%;
+      height: 120px;
+      background-image: linear-gradient(to bottom, #3b8eff, #759aff);
+      overflow: hidden;
+    }
+    
+    .sun {
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: yellow;
+      box-shadow: 0 0 23px #fff;
+      transform: translate(22px, 10px)
+    }
+    
+    .clouds {
+      position: absolute;
+      background-image: linear-gradient(to bottom, #f7faff, #d3dfff);
+      height: 20px;
+      width: 60px;
+      border-radius: 50%;
+    }
+    
+    .cloud-1 {
+      transform: translate(40px, 30px);
+    }
+    
+    .cloud-2 {
+      transform: translate(80px, 35px);
+    }
+    
+    .cloud-3 {
+      transform: translate(120px, 10px);
+    }
+    
+    .cloud-4 {
+      transform: translate(45px, 40px);
+      width: 44px;
+      height: 12px
+    }
+    
+    .hills {
+      position: absolute;
+      border-radius: 50%;
+    }
+    
+    .hill-0 {
+      width: 400%;
+      height: 80px;
+      transform: translate(-16px, 74px);
+      background-image: linear-gradient(to bottom, #33952b, #258634);
+    }
+    
+    .hill-1 {
+      width: 200%;
+      height: 60px;
+      transform: translate(-170px, 81px);
+      background-image: linear-gradient(to bottom, #36a52c, #20782e);
+    }
+    
+    .hill-2 {
+      width: 400%;
+      height: 80px;
+      transform: translate(-68px, 90px);
+      background-image: linear-gradient(to bottom, #4da746, #30893e);
+    }
+
+  </style>
+
 </div>
+
+
+<div class="card">
+  <div class="card-title">Honey Bee</div>
+  <div class="card-notes">
+    <div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div>
+      <h3>Honey Bee</h3>
+      <p>A honey bee (or honeybee) is any member of the genus Apis.</p>
+    </div>
+  </div>
+</div>
+<style>
+  .card {
+    font-family: Helvetica;
+    font-size: 14px;
+    line-height: 1.25em;
+    /* Declare this element as the coordinate reference for it's children */
+    position: relative;
+    width: 300px;
+    height: 400px;
+    /* Set a background images and add a gradient over the top */
+    background-image: /* Create a gradient  */
+    linear-gradient(to bottom, transparent 50%, rgba(0, 0, 0, 0.75) 100%), /* Add an image */
+    url(_downloadfiles_wallpapers_1920_1200_bee_on_flower_widescreen_7529.jpg);
+    /* This image should fill the area */
+    background-size: cover;
+    /* Center the image */
+    background-position: center;
+    margin: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    /* Mask the contents to this box, this is important for the rounded corners */
+    overflow: hidden;
+  }
+  
+  .card-title {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px 18px 10px 40px;
+    clip-path: polygon(0% 0%, 100% 0%, 95% 50%, 100% 100%, 0% 100%);
+    transform: translate(0, 20px);
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+  }
+  
+  .card-notes {
+    position: absolute;
+    background-color: #fff;
+    bottom: 0;
+    width: 100%;
+    height: 30%;
+  }
+  
+  .card-notes>div {
+    box-sizing: border-box;
+    padding: 10px;
+    position: absolute;
+    height: 100%;
+  }
+  
+  .card-notes>div:first-child {
+    width: 33%;
+    background-color: #f6e108;
+    left: 0;
+  }
+  
+  .card-notes h3, .card-notes p {
+    margin: 0 0 10px 0;
+  }
+  
+  .card-notes p {
+    color: #666;
+  }
+  
+  .card-notes>div:last-child {
+    width: 67%;
+    background-color: white;
+    right: 0;
+  }
+
+</style>
+
+
 
 <style>
   .container {

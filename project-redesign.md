@@ -5,7 +5,19 @@ you have created and redesign it using the ideas from
 this class. 
 
 The goals is to focus on improving the front end, visual 
-and user experience of the chosen project. 
+design, and user experience of the chosen project. 
+
+Follow these steps:
+
+1. Define and document the project that you will redesign
+  - Document your project before starting. 
+    - Take screenshots of the project in it's current state. 
+    - Take notes about the project and your goals with redesigning it. 
+    - Post this documentation to the GitHub repo. 
+2. Define the improvements you want to make.  
+  - Identify everything you want to improve.
+    - Make a list of everything and include notes. 
+3. Work on your project. 
 
 ## Competencies 
 
