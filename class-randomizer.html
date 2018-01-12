@@ -1,0 +1,157 @@
+<div class="container">
+  
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  
+  <div></div>
+  
+</div>
+<style>
+  .container {
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px;
+    grid-gap: 10px 10px;
+  }
+  
+  .container > div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+  }
+</style>
+ 
+
+ 
+ 
+ <script>
+  const courses = []
+  
+  
+  // Course 
+  function Course(name, students = []) {
+    this.name = name
+    this.students = students
+    this.pairs = []
+    this.currentStudent = -1
+  }
+  
+  Course.prototype.addStudent = function(name) {
+    this.students.push(new Student(name))
+  }
+  
+  Course.prototype.randomizeStudents = function() {
+    this.students.sort(function() {  
+      return 0.5 < Math.random()
+    });
+    this.currentStudent = -1
+    // console.log("randomized", this.currentStudent);
+  }
+  
+  Course.prototype.getStudents = function() {
+    return this.students.slice()
+  }
+  
+  Course.prototype.nextStudent = function() {
+    this.currentStudent += 1
+    // console.log("?", this.currentStudent);
+    if (this.currentStudent < this.students.length) {
+      // console.log(this.students[this.currentStudent]);
+      const student = this.students[this.currentStudent]
+      return student
+    } 
+    
+    this.randomizeStudents()
+    this.nextStudent()
+  }
+  
+  Course.prototype.pairStudents = function () {
+    this.pairs = []
+    const studentsCopy = this.students.slice()
+    const numberOfStudents = this.students.length
+    const halfStudents = Math.floor(numberOfStudents/2)
+    for (let i = 0; i =< halfStudents; i++) {
+      const pair = []
+      pair.push(studentsCopy.splice(randomInt(studentsCopy.length), 1))
+      pair.push(studentsCopy.splice(randomInt(studentsCopy.length), 1))
+      // get pairs 
+    }
+    
+    
+    
+    // check for remaining student 
+    
+    //    while(studentsCopy.length > 0) {
+    //      const pair = []
+    //      pair.push(studentsCopy.splice(randomInt(studentsCopy.length), 1))
+    //      pair.push(studentsCopy.splice(randomInt(studentsCopy.length), 1))
+    //      this.pairs.push(pair)
+    //    }  
+  }
+  
+  // Student
+  function Student(name) {
+    this.name = name
+    this.picked = 0
+  }
+  
+  // Helper functions 
+  function randomInt(range) {
+    return Math.floor(Math.random() * range)
+  }
+  
+  function addCourse(name, students = []) {
+    const course = new Course(name, students)
+    courses.push(course)
+    return course
+  }
+  
+  function getCourse(courseName) {
+    for (let i = 0; i < courses.length; i++) {
+      if (courses[i].name === courseName) {
+        return courses[i]
+      }
+    }
+  }
+  
+  // --------------------------------------
+  
+  const web_2 = addCourse('Web 2')
+  web_2.addStudent('Joe')
+  web_2.addStudent('Julie')
+  web_2.addStudent('Jayce')
+  web_2.addStudent('Juan')
+  web_2.addStudent('Shane')
+  
+  console.log(getCourse(web_2.name))
+  console.log(web_2)
+  console.log(web_2.getStudents())
+  web_2.randomizeStudents();
+  console.log(web_2.getStudents())
+  
+  for (let i = 0; i < 10; i++) {
+    // FIXME: prints undefined after working through all students
+    const student = web_2.nextStudent()
+    console.log(">", student)
+  }
+  
+  web_2.pairStudents()
+  console.log(web_2.pairs);
+  
+</script>

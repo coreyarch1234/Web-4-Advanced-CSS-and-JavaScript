@@ -1,3 +1,18 @@
+
+<!-- 
+
+This example creates two 3d cubes using 
+ transform 3d. Key points. 
+ 
+ 1. The container determines the 'view' it uses `perspective: 400px`
+ 2. Each cube holds 6 faces, use `transform-style: preserve-3d`
+  Rotating or translating a cube will rotate and translate all 
+  of it's child faces as a group. 
+ 3. Each face is translated and rotated. 
+  I *first* rotated each face then translated along the z axis. 
+  
+-->  
+
 <div class="container">
 
   <div class="cube cube-1">

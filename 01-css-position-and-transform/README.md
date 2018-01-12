@@ -153,6 +153,7 @@ If you can't think of things to draw try these:
   - Coffee mug
   - Coffee bean
   - Orange (the fruit)
+  - Mushroom
 - Icons
   - Marker
   - Heart
@@ -170,24 +171,34 @@ If you can't think of things to draw try these:
   - Truck 
   - Plane 
   - Flying Saucer
+  - Spaceship
+    - USS Enterprise
+    - TIE Fighter
+    - X-Wing
 - Animals
   - Elephant
   - Cat
   - Dog
+  - Penguin
+  - Bird (Twitter bird?)
   - Insect
     - Spider
     - Beetle
 - Architecture
   - House 
   - Office Building
+  - Tent
 - Laptop
 - Lamp
+- Headphones
 - Hat
 - Video Game Controller 
 - Fire extinguisher
 - Person
 - Slack Logo
 - Robot
+- Braus
+- Captain Rainbow
 - Make a logo for one of your projects
 - Try to recreate a logo: 
   - Target

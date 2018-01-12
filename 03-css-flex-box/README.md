@@ -23,7 +23,7 @@ one dimensional system.
 
 Layout items for a menu
 
-Layout items on a grid 
+Layout items on a grid
 
  
 
