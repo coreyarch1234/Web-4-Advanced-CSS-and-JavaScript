@@ -1,4 +1,14 @@
 <div class="container">
+  
+  <!-- 
+  
+  Key frames allow you to create animations that are applied to 
+  elements by a name. They also allow you to create animation 
+  in steps or sequence. 
+  
+  
+  
+  -->
 
   <!-- ******************************************* -->
   <!-- Keyframe from to -->
@@ -26,17 +36,21 @@
     }
     
     .h>div {
-      animation-name: animation-1;
-      animation-duration: 4000ms;
-      animation-iteration-count: infinite;
-      animation-direction: alternate-reverse;
+      animation-name: animation-1; /* This element uses animation-1. */
+      animation-duration: 4000ms;  /* The length of the animation is 4 secs. */
+      animation-iteration-count: infinite; /* The animation will repeat forever. */
+      animation-direction: alternate-reverse; /* The animationn will play backwards and then forwards. */
     }
     
+    /* Define a keyframe block. Then set properties to 
+    animation from and properties to animate to. */
     @keyframes animation-1 {
+      /* Properties start here */
       from {
         background-color: red;
         transform: rotate(0) scale(1);
       }
+      /* and animate to these values */
       to {
         background-color: blue;
         transform: rotate(12deg) scale(1.25);
@@ -79,9 +93,12 @@
       animation-duration: 4000ms;
       animation-iteration-count: infinite;
       animation-direction: alternate;
-      animation-timing-function: linear;
+      animation-timing-function: linear; /* This animation uses linear easing */
     }
     
+    /* Key frames can animate in steps with each step representing 
+    a percentage of the total length of the animation. Total time 
+    for the animation is set by `animation-duration: 4000ms;` above */
     @keyframes animation-2 {
       0% {
         background-color: red;

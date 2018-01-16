@@ -7,7 +7,12 @@ Motion is an important feature that improves the user experience of
 any product. Motion not only creates a more interesting experience 
 it also can direct and help users understand how a product functions. 
 
-Do not underestimate the power of adding motion. 
+Do not underestimate the power of adding motion. Motion can 
+be:
+
+- Fun 
+- Instructive
+- Engaging
 
 Look at products you use every day. Think about the motion that 
 happen at various interactions ask youself how these effect your 
@@ -21,6 +26,7 @@ should develop the following competencies:
 - Create Motion with CSS transitions 
 - Identify easing types and apply easing
 - Construct interesting animated interactions
+- Build engaging intractions and animations 
 
 ## What is a micro interaction?
 
@@ -34,11 +40,11 @@ On the other hand if you interact with something on the screen
 and there is some visual feedback you feel more confident in 
 the software and your interaction. 
 
-It's a lot like talking to someone. If they don't answer, or nod 
-their head you start to wonder whether they are listening or not? 
+**It's a lot like talking to someone. If they don't answer, or nod 
+their head you start to wonder whether they are listening or not?**
 
 Software has the same experience and expectations. Have you ever 
-tapped a button and, when nothing happened tapped it again because 
+tapped a button and when nothing happened tapped it again because 
 you weren't sure if it was working? _This is the experience you 
 are trying to avoid!_
 
@@ -48,6 +54,8 @@ are trying to avoid!_
 > guides a user through a flow in an intuitive and effective way.
 > 
 > [What are Microinteractions](https://blog.proto.io/secret-killer-ux-design-microinteractions/)
+
+- [A complete beginners guide to microinteractions](https://uxplanet.org/micro-interactions-a-complete-beginners-guide-b446d90215ec)
 
 Here is what Apple says in their Human Interface Guidelines
 
@@ -61,15 +69,13 @@ Here is what Apple says in their Human Interface Guidelines
 > 
 > [Apple HIG](https://developer.apple.com/ios/human-interface-guidelines/visual-design/animation/)
 
-This article has a lot of good advice for motion and interaction. 
+(This article has a lot of good advice for motion and interaction.) 
 
 ## What is animation?
 
 Animation in the context of this discussion will be the change of 
-appearance over time, and is affected by the change of properties 
-over time. 
-
-Read that again...
+element's appearance over time, and is applied by changing 
+property values over time. 
 
 In most cases properties will be numeric values. 
 
@@ -78,12 +84,15 @@ properties over time.
 
 ### Changes over time
 
-Changes over time are applied mathematically. For example: 
+Changes over time are applied mathematically. For example
+imagine this formula applied periodically: 
 
 `x += 1`
 
-Creates a linear change. The change at each update is is the same 
-amount. e.g. 0, 1, 2, 3, 4, ...
+This creates a linear change. The change at each update is is the 
+same amount. e.g. 0, 1, 2, 3, 4, ...
+
+Now imagine the formula is this: 
 
 `x -= (x - dx) * 0.5`
 
@@ -107,23 +116,25 @@ You could graph the two of these.
 
 In animation the different types of mathematical changes are called
 **easing**. Math can get pretty clever and there are many different
-functions that can create different types of easing curves. 
+functions that can create different types of easing curves.
 
-#### Easing 
+- https://matthewlein.com/tools/ceaser
 
-Easing imparts character to motion. 
+#### Why use Easing? 
 
-Disney wrote a book on their animation process called "The Illusion of Life".
-While the book doesn't talk about math it does talk about easing! 
-And underneath the discussion there is some underlyng math. 
+**Easing imparts character to motion.** 
+
+Disney wrote a book on their animation process called "The Illusion 
+of Life". While the book doesn't talk about math it does talk about 
+easing! And underneath the discussion there is some underlyng math. 
 
 **Terms**
 
 Here are some simple terms to describe all forms of easing. 
 
 - linear - constant rate of change
-- ease out - slows down, starts fast, and slows at the end
-- ease in - speeds up, starts slow is fast at the end
+- ease out - starts fast, and slows at the end
+- ease in - starts slow is fast at the end
 
 ![easing curves](easing-curves-graph-2.png)
 
@@ -195,18 +206,31 @@ is good practice and makes your code easier to understand.
 separation of concerns. This keeps code organized and makes it easier 
 to understand and edit in the future. 
 
-## Challenge Micro interactions 
+## Challenge: Micro interactions 
 
 Design 5 micro interactions. Make your animations fun and informative. 
 
 Use hover and active to activate motion. Use CSS transition to create 
 motion. 
 
-### Stretch Challenges  
+### Challenge: User Testing your work
+
+Bring your project to UX testing at Make School: Wed, Jan 17. 
+
+This is perfect for: 
+
+- Your current project before you have made any improvements
+- Your current project after you have made improvements 
+- Your core project before you have put any time into coding
+
+### Stretch Challenges 
 
 - Create 7 animations
 - Create a key frame animation
 - Use JavaScript to trigger an interaction
+- Create an onboarding animation. 
+  - https://cdn-images-1.medium.com/max/1600/1*RBAB3gII3BmxwSkjWgfDYg.gif
+  - 
 
 ### Examples 
 
@@ -215,6 +239,8 @@ Examples of CSS web interaction...
 - https://dribbble.com/tags/micro-interaction
 - https://www.pinterest.com/search/pins/?q=micro%20interactions
 - https://www.behance.net/gallery/42185273/Micro-Interactions
+
+-- https://medium.com/ux-in-motion/5-mistakes-to-avoid-when-designing-micro-interactions-a6f638ee6a86
 
 ## Lesson 
 

@@ -145,9 +145,9 @@
       top: 20px;
       transition: 400ms;
     }
-    
     /* The :hover pseudo class is applied to the parent
-    with the animation is targeting the child div. */ 
+    with the animation is targeting the child div. */
+    
     .c:hover>div {
       transform: scale(1.25) rotate(12deg);
     }
@@ -374,15 +374,15 @@
       left: 0;
       transition: 200ms
     }
-    
     /* When the .switch has the class .on change the 
     color to green. */
+    
     .switch.on {
       background-color: #07e207;
     }
-    
     /* When the .switch has the .on class change the 
     position left to 40px. */
+    
     .switch.on>div {
       left: 40px;
     }
@@ -413,7 +413,8 @@
 
   <!-- Styles for hamburger X -->
   <style>
-    /* Create two divs to form a = shape */ 
+    /* Create two divs to form a = shape */
+    
     .k {
       border: solid 1px black;
       width: 100px;
@@ -437,8 +438,8 @@
       transform: translate(20px, 55px) rotate(0);
       transition: 200ms;
     }
-    
     /* On a hover */
+    
     .k:hover {
       /* Change the background color to black */
       background-color: black;
@@ -448,8 +449,8 @@
       /* Change the background of the X to white */
       background-color: white;
     }
-    
     /* Translate and rotate the inner divs to make an X */
+    
     .k:hover>div:nth-child(1) {
       transform: translate(20px, 45px) rotate(45deg);
     }
@@ -473,6 +474,7 @@
   <!-- Styles for Hamburger X 2 -->
   <style>
     /* Make a Hamburger menu with three horizontal bars */
+    
     .l {
       border: solid 1px black;
       width: 100px;
@@ -510,14 +512,13 @@
     .l:hover>div {
       background-color: white;
     }
-    
     /* Animate the three bars */
     
     .l:hover>div:nth-child(1) {
       transform: translate(20px, 45px) rotate(45deg);
     }
-    
     /* Change the scale x to 0 */
+    
     .l:hover>div:nth-child(2) {
       opacity: 0;
       transform: scale(0, 1) translate(20px, 45px) rotate(0);
@@ -546,6 +547,7 @@
   <style>
     /* Start with a hamburger made from three horizontal 
     bars. These will form an arrow on hover. */
+    
     .m {
       border: solid 1px black;
       width: 100px;
@@ -656,8 +658,8 @@
       width: 50px;
       transform: translate(25px, 45px) rotate(45deg);
     }
-    
     /* This div changes from a bar to circle */
+    
     .n:hover>div:nth-child(2) {
       width: 60px;
       height: 60px;
@@ -674,6 +676,142 @@
 
   </style>
   <!-- ******************************************* -->
+
+
+
+  <!-- ******************************************* -->
+  <!-- Filters - blur -->
+  <div>
+    <div class="blur"></div>
+  </div>
+  <style>
+    .blur {
+      width: 100px;
+      height: 100px;
+      background-image: url(o.png);
+      background-repeat: none;
+      background-position: center;
+      filter: blur(20px);
+      transition: 400ms;
+    }
+    
+    .blur:hover {
+      filter: blur(0px);
+    }
+
+  </style>
+
+  <!-- ******************************************* -->
+  <!-- Filters - grayscale -->
+  <div>
+    <div class="gray"></div>
+  </div>
+  <style>
+    .gray {
+      width: 100px;
+      height: 100px;
+      background-image: url(o.png);
+      background-repeat: none;
+      background-position: center;
+      filter: grayscale(100%);
+      transition: 400ms;
+    }
+    
+    .gray:hover {
+      filter: grayscale(0%);
+    }
+
+  </style>
+
+
+  <!-- ******************************************* -->
+  <!-- Filters - brightness -->
+  <div>
+    <div class="brightness"></div>
+  </div>
+  <style>
+    .brightness {
+      width: 100px;
+      height: 100px;
+      background-image: url(o.png);
+      background-repeat: none;
+      background-position: center;
+      filter: brightness(200%);
+      transition: 400ms;
+    }
+    
+    .brightness:hover {
+      filter: brightness(0%);
+    }
+
+  </style>
+
+  <!-- ******************************************* -->
+  <!-- Filters - brightness -->
+  <div>
+    <div class="color-rotate"></div>
+  </div>
+  <style>
+    .color-rotate {
+      width: 100px;
+      height: 100px;
+      background-image: url(o.png);
+      background-repeat: none;
+      background-position: center;
+      filter: hue-rotate(0deg);
+      transition: 4000ms;
+    }
+    
+    .color-rotate:hover { 
+      filter: hue-rotate(360deg);
+    }
+
+  </style>
+
+  <!-- ******************************************* -->
+  <!-- Filters - Contrast -->
+  <div>
+    <div class="contrast"></div>
+  </div>
+  <style>
+    .contrast {
+      width: 100px;
+      height: 100px;
+      background-image: url(o.png);
+      background-repeat: none;
+      background-position: center;
+      filter: contrast(300%);
+      transition: 400ms;
+    }
+    
+    .constrast:hover {
+      filter: contrast(0%);
+    }
+
+  </style>
+
+
+  <!-- ******************************************* -->
+  <!-- Filters - sepia -->
+  <div>
+    <div class="sepia"></div>
+  </div>
+  <style>
+    .sepia {
+      width: 100px;
+      height: 100px;
+      background-image: url(o.png);
+      background-repeat: none;
+      background-position: center;
+      filter: sepia(100%);
+      transition: 400ms;
+    }
+    
+    .sepia:hover {
+      filter: sepia(0%);
+    }
+
+  </style>
 
 </div>
 
