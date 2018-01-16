@@ -1,0 +1,88 @@
+<div class="container">
+    <div class="outer">
+        <div class="first-inner">
+            <div class="circle-outer"></div>
+            <div class="circle-right"></div>
+        </div>
+    </div>
+</div>
+
+
+<style>
+
+    .container {
+        position: relative;
+        width: 300px;
+        height: 300px;
+        margin: auto;
+    }
+
+    .outer {
+        width: 300px;
+        height: 300px;
+        margin: auto;
+        top: 50px;
+        position: absolute;
+        background: linear-gradient(45deg, red, blue);
+        border-radius: 25%;
+
+    }
+
+    .first-inner {
+        width: 200px;
+        height: 200px;
+        transform: translate(25%, 25%);
+        position: absolute;
+        border-radius: 25%;
+        box-sizing: border-box;
+        background-color: transparent;
+        border: 30px solid;
+        border-color: white;
+    }
+
+    .second-inner {
+        width: 150px;
+        height: 150px;
+        transform: translate(17.5%, 17.5%);
+        position: absolute;
+        background: linear-gradient(90deg, red, blue);
+        border-radius: 25%;
+
+    }
+
+    .circle-right {
+        width: 25px;
+        height: 25px;
+        margin: auto;
+        transform: translate(440%, 35%);
+        position: absolute;
+        background: linear-gradient(90deg, white, white);
+        border-radius: 50%;
+
+    }
+
+    .circle-outer {
+        width: 70;
+        height: 70;
+        margin: auto;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        border: 20px solid white;
+        left: 50%;
+        top: 50%;
+        border-radius: 50%;
+
+    }
+
+    .circle-inner {
+        width: 75px;
+        height: 75px;
+        margin: auto;
+        transform: translate(17%, 17%);
+        position: absolute;
+        background: linear-gradient(90deg, red, blue);
+        border-radius: 50%;
+
+    }
+
+</style>

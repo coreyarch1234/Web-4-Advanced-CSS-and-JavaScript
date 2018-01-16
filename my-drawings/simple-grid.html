@@ -1,0 +1,219 @@
+<div class="container">
+    <div class="box zero-zero"></div>
+    <div class="box one-zero"></div>
+    <div class="box two-zero"></div>
+    <div class="box three-zero"></div>
+    <div class="box zero-zero"></div>
+    <div class="box one-zero"></div>
+    <div class="box two-zero"></div>
+    <div class="box three-zero"></div>
+
+</div>
+
+<style>
+    /* variables */
+    :root {
+        --cell-size: 100px;
+        --cell-border-color: #2ECC71;
+        --cell-border-width: 0.5px;
+        --cell-border-style: solid;
+        --cell-color: #013243;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(8, var(--cell-size));
+        grid-gap: 5px;
+        grid-auto-rows: minmax(var(--cell-size), auto);
+        margin-left: calc(50% - (4 * var(--cell-size) + 20px));
+        margin-top: 75px;
+    }
+
+    .box {
+        background-color: var(--cell-color);
+        border-color: var(--cell-border-color);
+        border-width: var(--cell-border-width);
+        border-style: var(--cell-border-style);
+    }
+
+    /* microinteractions */
+    .color-orange {
+        animation: color-orange 2s;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes color-orange {
+        /* You could think of as "step 1" */
+        0% {
+            background-color: var(--cell-color);
+        }
+        50% {
+            background-color: green;
+        }
+        100% {
+            background-color: var(--cell-color);
+        }
+    }
+
+    .grow {
+        animation: grow 2s;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes grow {
+        /* You could think of as "step 1" */
+        0% {
+
+            transform: scale(1, 1);
+            background-color: var(--cell-color);
+        }
+        50% {
+            transform: scale(1.5, 1.5);
+            background-color: blue;
+        }
+        100% {
+            transform: scale(1, 1);
+            background-color: var(--cell-color);
+        }
+    }
+
+    .shrink {
+        animation: shrink 3s;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes shrink {
+        /* You could think of as "step 1" */
+        0% {
+
+            transform: scale(1, 1);
+            background-color: var(--cell-color);
+        }
+        50% {
+            transform: scale(0.2, 0.2);
+            background-color: red;
+        }
+        100% {
+            transform: scale(1, 1);
+            background-color: var(--cell-color);
+        }
+    }
+
+    .growIrregular {
+        animation: growIrregular 3s;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes growIrregular {
+        /* You could think of as "step 1" */
+        0% {
+
+            transform: scale(1, 1);
+            background-color: var(--cell-color);
+        }
+        50% {
+            transform: scale(1.5, 1.7);
+            background-color: black;
+        }
+        100% {
+            transform: scale(1, 1);
+            background-color: var(--cell-color);
+        }
+    }
+
+    .shrinkIrregular {
+        animation: shrinkIrregular 2s;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes shrinkIrregular {
+        /* You could think of as "step 1" */
+        0% {
+
+            transform: scale(1, 1);
+        }
+        50% {
+            transform: scale(0.3, 0.6);
+        }
+        100% {
+            transform: scale(1, 1);
+        }
+    }
+
+</style>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+<script>
+    $(function() {
+
+        // function makeBox(el) {
+        //     return {
+        //         color: "orange",
+        //         feature: "shrink",
+        //         el: el //
+        //     }
+        // }
+        //
+        // var box1 = makeBox($("#box-1"))
+        // box1.el.toggleClass()
+        //
+        //
+        // $('.box').click(function(e) {
+        //     const color = $(this).data("color")
+        //     const color = $(this).attr("data-color")
+        //
+        //     $(this).toggleClass(color)
+        // })
+        var colorOrangeStatus = false;
+        $('.zero-zero').click((event) => {
+            if (colorOrangeStatus == false){
+                $('.zero-zero').addClass('color-orange');
+            }else{
+                $('.zero-zero').removeClass('color-orange');
+            }
+            colorOrangeStatus = !(colorOrangeStatus);
+        });
+
+        var growStatus = false;
+        $('.one-zero').click((event) => {
+            if (growStatus == false){
+                $('.one-zero').addClass('grow');
+            }else{
+                $('.one-zero').removeClass('grow');
+            }
+            growStatus = !(growStatus);
+        });
+
+        var shrinkStatus = false;
+        $('.two-zero').click((event) => {
+            if (shrinkStatus == false){
+                $('.two-zero').addClass('shrink');
+            }else{
+                $('.two-zero').removeClass('shrink');
+            }
+            shrinkStatus = !(shrinkStatus);
+        });
+
+
+        var growIrregularStatus = false;
+        $('.three-zero').click((event) => {
+            if (growIrregularStatus == false){
+                $('.three-zero').addClass('growIrregular');
+            }else{
+                $('.three-zero').removeClass('growIrregular');
+            }
+            growIrregularStatus = !(growIrregularStatus);
+        });
+
+        function animateBox(status, className) {
+            if (status == false){
+                $(className).addClass('growIrregular');
+            }else{
+                $('.three-zero').removeClass('growIrregular');
+            }
+            growIrregularStatus = !(growIrregularStatus);
+        }
+    })
+</script>
